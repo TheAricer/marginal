@@ -61,12 +61,10 @@ def main():
 	if re.match(r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$', para_options().u):
 		with ThreadPoolExecutor(5) as executor:
 			executor.map(IP, C(para_options().u))
-		print('this is ip')
 	elif re.match(r'.*?\.\D*$', para_options().u):
 		site(para_options().u)
-		print('no ip')
 	else:
-		print('input is worning!')
+		print('Input error, please try retyping your instruction!')
 def bing(K):
 	print('testest')
 	print(K)
