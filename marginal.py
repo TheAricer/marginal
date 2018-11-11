@@ -65,9 +65,6 @@ def main():
 		site(para_options().u)
 	else:
 		print('Input error, please try retyping your instruction!')
-def bing(K):
-	print('testest')
-	print(K)
 
 if __name__ == '__main__':
 	if para_options().u:
